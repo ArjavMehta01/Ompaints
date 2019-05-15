@@ -1,0 +1,40 @@
+/*******************************
+* MODAL AS LEFT/RIGHT SIDEBAR
+* Add ".modal-left" or ".modal-right" in modal parent div, after class="modal".
+*******************************/
+
+// Modal Panel: Right
+$header-nav-height: 0px; // 56px;
+$modal-height: calc(100vh - #{$header-nav-height});
+
+.modal {
+  &.modal-left,
+  &.modal-right {
+    .modal-dialog {
+      max-width: 380px;
+      min-height: $modal-height;
+    }
+
+    &.show .modal-dialog {
+      transform: translate(0, 0);
+    }
+
+    .modal-content {
+      height: $modal-height;
+      overflow-y: auto;
+    }
+  }
+  &.modal-left {
+    .modal-dialog {
+      transform: translate(-100%, 0);
+      margin: $header-nav-height auto 0 0;
+    }
+  }
+
+  &.modal-right {
+    .modal-dialog {
+      transform: translate(100%, 0);
+      margin: $header-nav-height 0 0 auto;
+    }
+  }
+}

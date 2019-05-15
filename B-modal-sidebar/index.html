@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap 4 modal sidebar</title>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css'>
+  <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js'></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    $(document).ready(function () {
+      var option;
+      var area;
+      var lit;
+      $("#paintOption").change(function () {
+        var val = $("#paintOption").val();
+        switch (val) {
+          case "1":
+            $("#staticMoney").val("₹");
+            option = 35;
+            break;
+
+          case "2":
+            $("#staticMoney").val("₹₹");
+            option = 45;
+            break;
+
+          case "3":
+            $("#staticMoney").val("₹₹₹");
+            option = 60;
+            break;
+
+          case "4":
+            $("#staticMoney").val("₹₹₹₹");
+            option = 90;
+            break;
+
+          case "5":
+            $("#staticMoney").val("₹₹₹₹");
+            option = 100;
+            break;
+
+          case "6":
+            $("#staticMoney").val("₹₹₹₹₹");
+            option = 110;
+            break;
+
+          default:
+            break;
+        }
+        $(".money").css("visibility", "visible");
+      });
+
+      $("#calc").click(function () {
+        area = $("#area").val();
+        lit = (area * 4.25) / option;
+        lit = Math.round(lit);
+        $("#result").text("As per the parameters mentioned above, an interior with " + area +
+          " sqft will require approximatey " + lit + " liters for two successful coats.");
+        $(".post-calc").css("visibility", "visible");
+        $(".disclaimer").css("display", "inline-block");
+      });
+
+
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <div class="container" style="padding-top:50px;">
+
+    <div class="text-center">
+      <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#myModalLeft">
+        Exterior Calculator
+      </button>
+
+      <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#myModalRight">
+        Interior Calculator
+      </button>
+    </div>
+
+    <div id="myModalLeft" class="modal fade modal-left" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal left</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, no fugit quidam eirmod qui, tacimates argumentum ius ad. Ei has adhuc nihil.
+              Idque lorem cu per, omnes delenit percipitur cum an, mei voluptua hendrerit ei. Qui ex justo abhorreant
+              efficiantur. Soleat malorum cu sit.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModalRight" class="modal fade modal-right" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Interior</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form1">
+              <form>
+
+                <div class="form-group row" style="margin-bottom:0px;">
+
+
+                  <label for="inputEmail3" class="col-sm-4 col-form-label">Name</label>
+                  <div class="col-sm-8">
+                    <div class="input-group mb-2">
+                      <input type="text" class="form-control" id="name" placeholder="">
+                    </div>
+                  </div>
+
+                  <label for="inputEmail3" class="col-sm-4 col-form-label">Contact No.</label>
+                  <div class="col-sm-8">
+                    <div class="input-group mb-2">
+                      <input type="text" class="form-control" id="name" placeholder="">
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+                  <label for="inputEmail3" class="col-sm-4 col-form-label">Area</label>
+                  <div class="col-sm-8">
+                    <div class="input-group mb-2">
+                      <input type="number" class="form-control" id="area" placeholder="">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">ft<sup>2</sup></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- </div> -->
+
+                  <!-- <div class="form-group row"> -->
+                  <label for="inputEmail3" class="col-sm-4 col-form-label">Paint</label>
+                  <div class="col-sm-8">
+                    <select class="custom-select my-1 mr-sm-2 paintOption" id="paintOption">
+                      <option selected>Choose....</option>
+                      <option value="1">Distempers</option>
+                      <option value="2">Economic Acrylic Emulsion Plastic</option>
+                      <option value="3">Standard Acrylic Emulsion</option>
+                      <option value="4">Acrylic Emulsion Premium</option>
+                      <option value="5">Enamel Paint</option>
+                      <option value="6">Luxury Acrylic Emulsion</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="money" style="visibility: hidden;">
+                  <div class="form-group row" style="margin-top:0px;">
+                    <label for="staticMoney" class="col-sm-4 col-form-label">Pricing</label>
+                    <div class="col-sm-8">
+                      <input type="text" readonly class="form-control-plaintext" id="staticMoney" value="">
+                    </div>
+                  </div>
+                </div>
+
+                <button type="button" id="calc" class="btn btn-primary">
+                  Calculate
+                </button>
+                <br>
+                <br>
+                <div class="post-calc" style="visibility: hidden;">
+                  <b>
+                    <p id="result"></p>
+                  </b>
+
+                </div>
+
+
+
+
+
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="disclaimer" style="font-size:14px; color: grey; display: none">
+              <p>∙ The above calculations are for flat surfaces only.<br />
+                ∙ The above calculations are for two coats of paints.<br />
+                ∙ Use prescribed premier before buying paints.<br />
+                ∙ The above calculations serve as an approximation.<br />
+                ∙ For furthur accurate details please contact our Colour Consultantion Service.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+</body>
+
+</html>
