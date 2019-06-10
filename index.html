@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>NewBiz Bootstrap Template</title>
+  <title>OmPaints</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -35,6 +35,72 @@
     Author: BootstrapMade.com
     License: https://bootstrapmade.com/license/
   ======================================================= -->
+
+
+  /*
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css'>
+  <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js'></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    $(document).ready(function () {
+      var option;
+      var area;
+      var lit;
+      $("#paintOption").change(function () {
+        var val = $("#paintOption").val();
+        switch (val) {
+          case "1":
+            $("#staticMoney").val("₹");
+            option = 35;
+            break;
+
+          case "2":
+            $("#staticMoney").val("₹₹");
+            option = 45;
+            break;
+
+          case "3":
+            $("#staticMoney").val("₹₹₹");
+            option = 60;
+            break;
+
+          case "4":
+            $("#staticMoney").val("₹₹₹₹");
+            option = 90;
+            break;
+
+          case "5":
+            $("#staticMoney").val("₹₹₹₹");
+            option = 100;
+            break;
+
+          case "6":
+            $("#staticMoney").val("₹₹₹₹₹");
+            option = 110;
+            break;
+
+          default:
+            break;
+        }
+        $(".money").css("visibility", "visible");
+      });
+
+      $("#calc").click(function () {
+        area = $("#area").val();
+        lit = (area * 4.25) / option;
+        lit = Math.round(lit);
+        $("#result").text("As per the parameters mentioned above, an interior with " + area +
+          " sqft will require approximatey " + lit + " liters for two successful coats.");
+        $(".post-calc").css("visibility", "visible");
+        $(".disclaimer").css("display", "inline-block");
+      });
+
+
+    });
+  </script>
+*/
 </head>
 
 <body>
@@ -57,24 +123,8 @@
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="drop-down"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li>
+          <li><a href="#team">Founders</a></li>
+          <li><a href="file:///C:/Users/admin/Desktop/Github%20Repos/Ompaints/B-modal-sidebar/index.html">Paint Area Calculator</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav><!-- .main-nav -->
@@ -216,7 +266,7 @@
 
         <header class="section-header">
           <h3>Services</h3>
-          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+          <p>Om paints takes pride in providing the below mentioned services.</p>
         </header>
 
         <div class="row">
@@ -226,7 +276,7 @@
               <!-- <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div> -->
               <h4 class="title" style="
               margin-left: 0px;
-          "><a href="">Lorem Ipsum</a></h4>
+          "><a href="">Decorative Paint Material</a></h4>
               <p class="description"></p>
             </div>
           </div>
@@ -235,7 +285,7 @@
               <!-- <div class="icon"><i class="ion-ios-bookmarks-outline" style="color: #e9bf06;"></i></div> -->
               <h4 class="title" style="
               margin-left: 0px;
-          "><a href="">Dolor Sitema</a></h4>
+          "><a href="">Texture Paint</a></h4>
               <p class="description"></p>
             </div>
           </div>
@@ -244,7 +294,7 @@
               <!-- <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div> -->
               <h4 class="title" style="
               margin-left: 0px;
-          "><a href="">Lorem Ipsum</a></h4>
+          "><a href="">Industrial Paint Material</a></h4>
               <p class="description"></p>
             </div>
           </div>
@@ -253,7 +303,7 @@
               <!-- <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div> -->
               <h4 class="title" style="
               margin-left: 0px;
-          "><a href="">Lorem Ipsum</a></h4>
+          "><a href="">French Polish for wood</a></h4>
               <p class="description"></p>
             </div>
           </div>
@@ -266,7 +316,7 @@
               <!-- <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div> -->
               <h4 class="title" style="
               margin-left: 0px;
-          "><a href="">Lorem Ipsum</a></h4>
+          "><a href="">Wood Coatings</a></h4>
               <p class="description"></p>
             </div>
           </div>
@@ -275,7 +325,7 @@
               <!-- <div class="icon"><i class="ion-ios-bookmarks-outline" style="color: #e9bf06;"></i></div> -->
               <h4 class="title" style="
               margin-left: 0px;
-          "><a href="">Dolor Sitema</a></h4>
+          "><a href="">Luxury wood coatings</a></h4>
               <p class="description"></p>
             </div>
           </div>
@@ -284,7 +334,7 @@
               <!-- <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div> -->
               <h4 class="title" style="
               margin-left: 0px;
-          "><a href="">Lorem Ipsum</a></h4>
+          "><a href="">Rust Coatings and Epoxy Material</a></h4>
               <p class="description"></p>
             </div>
           </div>
@@ -293,7 +343,7 @@
               <!-- <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div> -->
               <h4 class="title" style="
               margin-left: 0px;
-          "><a href="">Lorem Ipsum</a></h4>
+          "><a href="">Painting</a></h4> 
               <p class="description"></p>
             </div>
           </div>
@@ -306,7 +356,7 @@
               <!-- <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div> -->
               <h4 class="title" style="
               margin-left: 0px;
-          "><a href="">Lorem Ipsum</a></h4>
+          "><a href="">Colour consultation</a></h4>
               <p class="description"></p>
             </div>
           </div>
@@ -315,7 +365,7 @@
               <!-- <div class="icon"><i class="ion-ios-bookmarks-outline" style="color: #e9bf06;"></i></div> -->
               <h4 class="title" style="
               margin-left: 0px;
-          "><a href="">Dolor Sitema</a></h4>
+          "><a href="">Colour matching and tinting </a></h4>
               <p class="description"></p>
             </div>
           </div>
@@ -324,7 +374,7 @@
               <!-- <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div> -->
               <h4 class="title" style="
               margin-left: 0px;
-          "><a href="">Lorem Ipsum</a></h4>
+          "><a href="">Waterproofing materials</a></h4>
               <p class="description"></p>
             </div>
           </div>
@@ -333,7 +383,7 @@
               <!-- <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div> -->
               <h4 class="title" style="
               margin-left: 0px;
-          "><a href="">Lorem Ipsum</a></h4>
+          "><a href="">Metal Coatings</a></h4>
               <p class="description"></p>
             </div>
           </div>
@@ -346,7 +396,7 @@
               <!-- <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div> -->
               <h4 class="title" style="
               margin-left: 0px;
-          "><a href="">Lorem Ipsum</a></h4>
+          "><a href="">Poly urethane coatings</a></h4>
               <p class="description"></p>
             </div>
           </div>
@@ -355,7 +405,7 @@
               <!-- <div class="icon"><i class="ion-ios-bookmarks-outline" style="color: #e9bf06;"></i></div> -->
               <h4 class="title" style="
               margin-left: 0px;
-          "><a href="">Dolor Sitema</a></h4>
+          "><a href="">Mellamyne Coatings</a></h4>
               <p class="description"></p>
             </div>
           </div>
@@ -364,7 +414,7 @@
               <!-- <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div> -->
               <h4 class="title" style="
               margin-left: 0px;
-          "><a href="">Lorem Ipsum</a></h4>
+          "><a href="">Mechanized Painting tools</a></h4>
               <p class="description"></p>
             </div>
           </div>
@@ -373,51 +423,13 @@
               <!-- <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div> -->
               <h4 class="title" style="
               margin-left: 0px;
-          "><a href="">Lorem Ipsum</a></h4>
+          "><a href="">Painting Services</a></h4>
               <p class="description"></p>
             </div>
           </div>
         </div>
 
-        <div class="row">
-
-          <div class="col-md-3 col-lg-3  wow bounceInUp" data-wow-duration="1.4s">
-            <div class="box">
-              <!-- <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div> -->
-              <h4 class="title" style="
-              margin-left: 0px;
-          "><a href="">Lorem Ipsum</a></h4>
-              <p class="description"></p>
-            </div>
-          </div>
-          <div class="col-md-3 col-lg-3 wow bounceInUp" data-wow-duration="1.4s">
-            <div class="box">
-              <!-- <div class="icon"><i class="ion-ios-bookmarks-outline" style="color: #e9bf06;"></i></div> -->
-              <h4 class="title" style="
-              margin-left: 0px;
-          "><a href="">Dolor Sitema</a></h4>
-              <p class="description"></p>
-            </div>
-          </div>
-          <div class="col-md-3 col-lg-3  wow bounceInUp" data-wow-duration="1.4s">
-            <div class="box">
-              <!-- <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div> -->
-              <h4 class="title" style="
-              margin-left: 0px;
-          "><a href="">Lorem Ipsum</a></h4>
-              <p class="description"></p>
-            </div>
-          </div>
-          <div class="col-md-3 col-lg-3  wow bounceInUp" data-wow-duration="1.4s">
-            <div class="box">
-              <!-- <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div> -->
-              <h4 class="title" style="
-              margin-left: 0px;
-          "><a href="">Lorem Ipsum</a></h4>
-              <p class="description"></p>
-            </div>
-          </div>
-        </div>
+        
 
 
       </div>
@@ -443,7 +455,7 @@
                 <p class="card-text">To provide with quality
                   To spread joy with colors
                   To provide the right Material</p>
-                <a href="#" class="readmore">Read more </a>
+                
               </div>
             </div>
           </div>
@@ -456,7 +468,7 @@
                 <p class="card-text">To cater to the needs of the hour.
                   Customer Satisfaction
                   Value Creation </p>
-                <a href="#" class="readmore">Read more </a>
+                
               </div>
             </div>
           </div>
@@ -468,36 +480,14 @@
                 <h5 class="card-title">Eum ut aspernatur</h5>
                 <p class="card-text">Autem quod nesciunt eos ea aut amet laboriosam ab. Eos quis porro in non nemo ex.
                 </p>
-                <a href="#" class="readmore">Read more </a>
+                
               </div>
             </div>
           </div>
 
         </div>
 
-        <div class="row counters">
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">274</span>
-            <p>Clients</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">421</span>
-            <p>Projects</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">1,364</span>
-            <p>Hours Of Support</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">18</span>
-            <p>Hard Workers</p>
-          </div>
-
-        </div>
+        
 
       </div>
     </section>
@@ -516,9 +506,9 @@
           <div class="col-lg-12">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-app">Interior</li>
+              <li data-filter=".filter-card">Exterior</li>
+              <li data-filter=".filter-web">Items</li>
             </ul>
           </div>
         </div>
@@ -668,76 +658,7 @@
     <!--==========================
       Clients Section
     ============================-->
-    <section id="testimonials" class="section-bg">
-      <div class="container">
-
-        <header class="section-header">
-          <h3>Testimonials</h3>
-        </header>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-
-            <div class="owl-carousel testimonials-carousel wow fadeInUp">
-
-              <div class="testimonial-item">
-                <img src="img/testimonial-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <p>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
-                  quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                </p>
-              </div>
-
-              <div class="testimonial-item">
-                <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <p>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-                  quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                </p>
-              </div>
-
-              <div class="testimonial-item">
-                <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <p>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
-                  tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                </p>
-              </div>
-
-              <div class="testimonial-item">
-                <img src="img/testimonial-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <p>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit
-                  minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                </p>
-              </div>
-
-              <div class="testimonial-item">
-                <img src="img/testimonial-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <p>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa
-                  labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                </p>
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-
-
-      </div>
-    </section><!-- #testimonials -->
+    
 
     <!--==========================
       Team Section
@@ -745,7 +666,7 @@
     <section id="team">
       <div class="container">
         <div class="section-header">
-          <h3>Team</h3>
+          <h3>Founders</h3>
           <p>If you want to go fast, go alone. If you want to go far, go together.</p>
         </div>
 
@@ -769,30 +690,14 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="member">
-              <img src="img/team-2.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Kunal Motani</h4>
-                  <span>Product Manager</span>
-                  <div class="social">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        
 
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
             <div class="member">
               <img src="img/team-3.jpg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>Joey</h4>
+                  <h4>Sunil Sheth</h4>
                   <span>CTO</span>
                   <div class="social">
                     <a href=""><i class="fa fa-twitter"></i></a>
@@ -805,23 +710,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="member">
-              <img src="img/team-4.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Ted</h4>
-                  <span>Accountant</span>
-                  <div class="social">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          
 
         </div>
 
@@ -969,6 +858,116 @@
       </div>
     </section><!-- #contact -->
 
+
+
+    <div id="myModalRight" class="modal fade modal-right" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Interior Painting</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form1">
+              <form>
+
+                <div class="form-group row" style="margin-bottom:0px;">
+
+
+                  <label for="inputEmail3" class="col-sm-4 col-form-label">Name</label>
+                  <div class="col-sm-8">
+                    <div class="input-group mb-2">
+                      <input type="text" class="form-control" id="name" placeholder="">
+                    </div>
+                  </div>
+
+                  <label for="inputEmail3" class="col-sm-4 col-form-label">Contact No.</label>
+                  <div class="col-sm-8">
+                    <div class="input-group mb-2">
+                      <input type="text" class="form-control" id="name" placeholder="">
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+                  <label for="inputEmail3" class="col-sm-4 col-form-label">Area</label>
+                  <div class="col-sm-8">
+                    <div class="input-group mb-2">
+                      <input type="number" class="form-control" id="area" placeholder="">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">ft<sup>2</sup></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- </div> -->
+
+                  <!-- <div class="form-group row"> -->
+                  <label for="inputEmail3" class="col-sm-4 col-form-label">Paint</label>
+                  <div class="col-sm-8">
+                    <select class="custom-select my-1 mr-sm-2 paintOption" id="paintOption">
+                      <option selected>Choose....</option>
+                      <option value="1">Distempers</option>
+                      <option value="2">Economic Acrylic Emulsion Plastic</option>
+                      <option value="3">Standard Acrylic Emulsion</option>
+                      <option value="4">Acrylic Emulsion Premium</option>
+                      <option value="5">Enamel Paint</option>
+                      <option value="6">Luxury Acrylic Emulsion</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="money" style="visibility: hidden;">
+                  <div class="form-group row" style="margin-top:0px;">
+                    <label for="staticMoney" class="col-sm-4 col-form-label">Pricing</label>
+                    <div class="col-sm-8">
+                      <input type="text" readonly class="form-control-plaintext" id="staticMoney" value="">
+                    </div>
+                  </div>
+                </div>
+
+                <button type="button" id="calc" class="btn btn-primary">
+                  Calculate
+                </button>
+                <br>
+                <br>
+                <div class="post-calc" style="visibility: hidden;">
+                  <b>
+                    <p id="result"></p>
+                  </b>
+
+                </div>
+
+
+
+
+
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="disclaimer" style="font-size:14px; color: grey; display: none">
+              <p>∙ The above calculations are for flat surfaces only.<br />
+                ∙ The above calculations are for two coats of paints.<br />
+                ∙ Use prescribed premier before buying paints.<br />
+                ∙ The above calculations serve as an approximation.<br />
+                ∙ For furthur accurate details please contact our Colour Consultantion Service.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
   </main>
 
   <!--==========================
@@ -980,7 +979,7 @@
         <div class="row">
 
           <div class="col-lg-4 col-md-6 footer-info">
-            <h3>NewBiz</h3>
+            <h3>OmPaints</h3>
             <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies
               darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo.
               Amet volutpat consequat mauris nunc congue.</p>
@@ -989,10 +988,10 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Terms of service</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
               <li><a href="#">Privacy policy</a></li>
             </ul>
           </div>
@@ -1025,7 +1024,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>NewBiz</strong>. All Rights Reserved
+        &copy; Copyright <strong>A&B</strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!--
@@ -1034,7 +1033,7 @@
           Licensing information: https://bootstrapmade.com/license/
           Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
         -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="#">Bhavya&Arjav</a>
       </div>
     </div>
   </footer><!-- #footer -->
