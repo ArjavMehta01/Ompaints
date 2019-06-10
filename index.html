@@ -12,6 +12,10 @@
   <link href="img/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
+  <!-- B-Custom-Client-Slider -->
+  <!-- <link rel="stylesheet" type="text/css" href="B-custom-client-slider/slick.css" /> -->
+  <link rel="stylesheet" href="B-custom-client-slider/style.css">
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
     rel="stylesheet">
@@ -37,70 +41,13 @@
   ======================================================= -->
 
 
-  /*
+
   <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css'>
-  <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+  <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+
   <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
   <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js'></script>
   <link rel="stylesheet" href="css/style.css">
-  <script>
-    $(document).ready(function () {
-      var option;
-      var area;
-      var lit;
-      $("#paintOption").change(function () {
-        var val = $("#paintOption").val();
-        switch (val) {
-          case "1":
-            $("#staticMoney").val("₹");
-            option = 35;
-            break;
-
-          case "2":
-            $("#staticMoney").val("₹₹");
-            option = 45;
-            break;
-
-          case "3":
-            $("#staticMoney").val("₹₹₹");
-            option = 60;
-            break;
-
-          case "4":
-            $("#staticMoney").val("₹₹₹₹");
-            option = 90;
-            break;
-
-          case "5":
-            $("#staticMoney").val("₹₹₹₹");
-            option = 100;
-            break;
-
-          case "6":
-            $("#staticMoney").val("₹₹₹₹₹");
-            option = 110;
-            break;
-
-          default:
-            break;
-        }
-        $(".money").css("visibility", "visible");
-      });
-
-      $("#calc").click(function () {
-        area = $("#area").val();
-        lit = (area * 4.25) / option;
-        lit = Math.round(lit);
-        $("#result").text("As per the parameters mentioned above, an interior with " + area +
-          " sqft will require approximatey " + lit + " liters for two successful coats.");
-        $(".post-calc").css("visibility", "visible");
-        $(".disclaimer").css("display", "inline-block");
-      });
-
-
-    });
-  </script>
-*/
 </head>
 
 <body>
@@ -343,7 +290,7 @@
               <!-- <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div> -->
               <h4 class="title" style="
               margin-left: 0px;
-          "><a href="">Painting</a></h4> 
+          "><a href="">Painting</a></h4>
               <p class="description"></p>
             </div>
           </div>
@@ -429,7 +376,7 @@
           </div>
         </div>
 
-        
+
 
 
       </div>
@@ -455,7 +402,7 @@
                 <p class="card-text">To provide with quality
                   To spread joy with colors
                   To provide the right Material</p>
-                
+
               </div>
             </div>
           </div>
@@ -468,7 +415,7 @@
                 <p class="card-text">To cater to the needs of the hour.
                   Customer Satisfaction
                   Value Creation </p>
-                
+
               </div>
             </div>
           </div>
@@ -480,14 +427,14 @@
                 <h5 class="card-title">Eum ut aspernatur</h5>
                 <p class="card-text">Autem quod nesciunt eos ea aut amet laboriosam ab. Eos quis porro in non nemo ex.
                 </p>
-                
+
               </div>
             </div>
           </div>
 
         </div>
 
-        
+
 
       </div>
     </section>
@@ -658,7 +605,7 @@
     <!--==========================
       Clients Section
     ============================-->
-    
+
 
     <!--==========================
       Team Section
@@ -690,7 +637,7 @@
             </div>
           </div>
 
-        
+
 
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
             <div class="member">
@@ -710,7 +657,7 @@
             </div>
           </div>
 
-          
+
 
         </div>
 
@@ -725,14 +672,14 @@
       <div class="container">
 
         <div class="section-header">
-          <h3>Our CLients</h3>
+          <h3>Our Clients</h3>
           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque dere santome nida.
           </p>
         </div>
 
         <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <!-- <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
               <img src="asianpaints.png" class="img-fluid" alt="">
             </div>
@@ -778,10 +725,20 @@
             <div class="client-logo">
               <img src="skylon.png" class="img-fluid" alt="">
             </div>
-          </div>
-
+          </div> -->
         </div>
 
+      </div>
+
+      <div class="customer-logos">
+        <div class="slide"><img src="https://www.solodev.com/assets/carousel/image1.png"></div>
+        <div class="slide"><img src="https://www.solodev.com/assets/carousel/image2.png"></div>
+        <div class="slide"><img src="https://www.solodev.com/assets/carousel/image3.png"></div>
+        <div class="slide"><img src="https://www.solodev.com/assets/carousel/image4.png"></div>
+        <div class="slide"><img src="https://www.solodev.com/assets/carousel/image5.png"></div>
+        <div class="slide"><img src="https://www.solodev.com/assets/carousel/image6.png"></div>
+        <div class="slide"><img src="https://www.solodev.com/assets/carousel/image7.png"></div>
+        <div class="slide"><img src="https://www.solodev.com/assets/carousel/image8.png"></div>
       </div>
 
     </section>
@@ -800,9 +757,9 @@
 
           <div class="col-lg-6">
             <div class="map mb-4 mb-lg-0">
-              <iframe
+              <!-- <iframe
                 src="https://www.google.com/maps/place/Om+Paints/@18.962282,72.8112533,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7ce0daaad6b9b:0x49931ebe0158de3e!8m2!3d18.962282!4d72.813442"
-                frameborder="0" style="border:0; width: 100%; height: 312px;" allowfullscreen></iframe>
+                frameborder="0" style="border:0; width: 100%; height: 312px;" allowfullscreen></iframe> -->
             </div>
           </div>
 
@@ -964,7 +921,7 @@
       </div>
     </div>
 
-  </div>
+    </div>
 
 
 
@@ -1043,6 +1000,8 @@
   <!-- <div id="preloader"></div> -->
 
   <!-- JavaScript Libraries -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js'></script>
+  <script src="B-Custom-Client-Slider/script.js"></script>
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
