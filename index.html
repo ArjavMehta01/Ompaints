@@ -32,7 +32,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <style>
     /* Set the size of the div element that contains the map */
     #map {
@@ -1243,63 +1243,55 @@
           <h3>Our Associates</h3>
         </div>
 
-        <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
+    <center> 
+  <img class="mySlides" src="_abro.png" style="width:30%" >
+  <img class="mySlides" src="_akzonobel.png" style="width:30%">
+  <img class="mySlides" src="_arjun.png" style="width:30%">
+  <img class="mySlides" src="_asianpaints.png" style="width:30%">
+  <img class="mySlides" src="_berger.png" style="width:30%">
+  <img class="mySlides" src="_coatingsandcoatings.png" style="width:30%">
+  <img class="mySlides" src="_deerfos.png" style="width:30%">
+  <img class="mySlides" src="_esdee.jpg" style="width:30%">
+  <img class="mySlides" src="_geneous.png" style="width:30%">
+  <img class="mySlides" src="_globalpaints2.png" style="width:30%">
+  <img class="mySlides" src="_indigo.png" style="width:30%">
+  <img class="mySlides" src="_mrf.png" style="width:30%">
+  <img class="mySlides" src="_norton.png" style="width:30%">
+  <img class="mySlides" src="_pidilite.png" style="width:30%">
+  <img class="mySlides" src="_skylon.png" style="width:30%">
+</center> 
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="1.png" class="img-fluid" alt="">
-            </div>
-          </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="2.png" class="img-fluid" alt="">
-            </div>
-          </div>
+<script>
+var myIndex = 0;
+carousel();
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="3.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="4.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="5.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="6.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="7.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="8.png" class="img-fluid" alt="">
-            </div>
-          </div>
-        </div>
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
 
       </div>
 
     </section>
 
     <!--==========================
-      Team Section
+      Team Section          
+
+      <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="8.png" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
     ============================-->
     <section id="team">
       <div class="container">
