@@ -121,24 +121,66 @@
       });
 
       $("#calc").click(function () {
+
+        var n = $("#name").val();
+        var c = $("#contact").val();
+        var flag = 0;
+        if (n == "" || c == "") {
+          alert("Please enter your Name and Contact details.");
+          flag = 0;
+        }
+        if (n != "" && c != "") {
+          flag = 1;
+        }
+
         area = $("#area").val();
         lit = (area * 4.25) / option;
         lit = Math.round(lit);
-        $("#result").text("As per the parameters mentioned above, an interior premise with " + area +
-          " sqft will require approximatey " + lit + " liters for two successful coats.");
-        $(".post-calc").css("visibility", "visible");
-        $(".disclaimer").css("display", "inline-block");
+
+        if (flag == 1) {
+          // Use this comment section to write the logic for the same.
+          // So what you want to do is, send the variables n = name_e, c = contact_e, area, lit = answer
+          // to OmPaints Email, so that they'll immideately get an idea if someone tried the tool or not.
+          // DO NOT CHANGE ANY OF THE CODE EXCEPT ADD YOUR OWN IN HERE.
+
+          $("#result").text("As per the parameters mentioned above, an interior premise with " + area +
+            " sqft will require approximatey " + lit + " liters for two successful coats.");
+          $(".post-calc").css("visibility", "visible");
+          $(".disclaimer").css("display", "inline-block");
+
+        }
       });
 
       $("#calc_e").click(function () {
+
+        var n = $("#name_e").val();
+        var c = $("#contact_e").val();
+        var flag = 0;
+        if (n == "" || c == "") {
+          alert("Please enter your Name and Contact details.");
+          flag = 0;
+        }
+        if (n != "" && c != "") {
+          flag = 1;
+        }
+
         area = $("#area_e").val();
         floor = $("#floor_e").val();
         lit = (area * 3.5) / option;
         lit = Math.round(lit);
-        $("#result_e").text("As per the parameters mentioned above, an exterior premise with " + area +
-          " sqft will require approximatey " + lit + " liters for two successful coats.");
-        $(".post-calc_e").css("visibility", "visible");
-        $(".disclaimer_e").css("display", "inline-block");
+
+        if (flag == 1) {
+          // Use this comment section to write the logic for the same.
+          // So what you want to do is, send the variables n = name_e, c = contact_e, area, lit = answer
+          // to OmPaints Email, so that they'll immideately get an idea if someone tried the tool or not.
+          // DO NOT CHANGE ANY OF THE CODE EXCEPT ADD YOUR OWN IN HERE.
+
+          $("#result_e").text("As per the parameters mentioned above, an exterior premise with " + area +
+            " sqft will require approximatey " + lit + " liters for two successful coats.");
+          $(".post-calc_e").css("visibility", "visible");
+          $(".disclaimer_e").css("display", "inline-block");
+        }
+
       });
 
 
@@ -182,8 +224,6 @@
     <div class="container">
 
       <div class="logo float-left">
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
         <a href="#intro" class="scrollto"><img src="..\ompaints.jpg" alt="" class="img-fluid my-img"></a>
       </div>
 
@@ -218,10 +258,6 @@
       <div class="intro-info">
         <h2>We provide tools<br>for your painting estimation</h2>
         <div>
-          <!-- <a href="#portfolio" class="btn-get-started scrollto">Our Portflio</a>
-          <a href="#services" class="btn-services scrollto">Our Services</a> -->
-
-          <!-- <div class="text-center"> -->
           <button type="button" class="btn btn-info my-button" data-toggle="modal" data-target="#myModalLeft">
             Exterior Calculator
           </button>
@@ -238,22 +274,8 @@
   </section><!-- #intro -->
 
   <br><br>
-  <!-- <br><br><br> -->
+
   <main id="main">
-
-    <!-- <div class="container" style="padding-top:50px;">
-
-      <div class="text-center">
-        <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#myModalLeft">
-          Exterior Calculator
-        </button>
-
-        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#myModalRight"
-          style="margin-left: 20px;">
-          Interior Calculator
-        </button>
-      </div> -->
-
     <div id="myModalLeft" class="modal fade modal-left" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -264,14 +286,10 @@
             </button>
           </div>
           <div class="modal-body">
-            <!-- <p>Lorem ipsum dolor sit amet, no fugit quidam eirmod qui, tacimates argumentum ius ad. Ei has adhuc nihil.
-              Idque lorem cu per, omnes delenit percipitur cum an, mei voluptua hendrerit ei. Qui ex justo abhorreant
-              efficiantur. Soleat malorum cu sit.</p> -->
             <div class="form2">
               <form>
 
                 <div class="form-group row" style="margin-bottom:0px;">
-
 
                   <label for="inputEmail3" class="col-sm-4 col-form-label">Name</label>
                   <div class="col-sm-8">
@@ -287,12 +305,6 @@
                     </div>
                   </div>
 
-
-
-
-
-
-
                   <label for="inputEmail3" class="col-sm-4 col-form-label">Area</label>
                   <div class="col-sm-8">
                     <div class="input-group mb-2">
@@ -302,7 +314,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- </div> -->
 
                   <label for="inputEmail3" class="col-sm-4 col-form-label">Floors</label>
                   <div class="col-sm-8">
@@ -311,7 +322,6 @@
                     </div>
                   </div>
 
-                  <!-- <div class="form-group row"> -->
                   <label for="inputEmail3" class="col-sm-4 col-form-label">Paint</label>
                   <div class="col-sm-8">
                     <select class="custom-select my-1 mr-sm-2 paintOption" id="paintOption_e">
@@ -344,10 +354,6 @@
                   </b>
 
                 </div>
-
-
-
-
 
               </form>
             </div>
@@ -397,12 +403,6 @@
                     </div>
                   </div>
 
-
-
-
-
-
-
                   <label for="inputEmail3" class="col-sm-4 col-form-label">Area</label>
                   <div class="col-sm-8">
                     <div class="input-group mb-2">
@@ -412,9 +412,7 @@
                       </div>
                     </div>
                   </div>
-                  <!-- </div> -->
 
-                  <!-- <div class="form-group row"> -->
                   <label for="inputEmail3" class="col-sm-4 col-form-label">Paint</label>
                   <div class="col-sm-8">
                     <select class="custom-select my-1 mr-sm-2 paintOption" id="paintOption">
@@ -449,10 +447,6 @@
                   </b>
 
                 </div>
-
-
-
-
 
               </form>
             </div>
@@ -511,74 +505,18 @@
     Footer
   ============================-->
     <footer id="footer">
-      <!-- <div class="footer-top">
-        <div class="container">
-          <div class="row">
-
-            <div class="col-lg-4 col-md-6 footer-info">
-              <h3>OmPaints</h3>
-              <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies
-                darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum
-                leo.
-                Amet volutpat consequat mauris nunc congue.</p>
-            </div>
-
-            <div class="col-lg-2 col-md-6 footer-links">
-              <h4>Useful Links</h4>
-              <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="B-modal-sidebar/index.html">Paint Area Calculator</a></li>
-              </ul>
-            </div>
-
-            <div class="col-lg-3 col-md-6 footer-contact">
-              <h4>Contact Us</h4>
-              <p>
-                Shop no. 22 , <br>
-                Jobunputra Compound, <br>
-                Nana Chowk, Mumbai- 400007 <br>
-                <strong>Phone:</strong> 022-23809460, 9820069259, 9820001965<br>
-                <strong>Email:</strong> info@ompaints.com<br>
-              </p>
-
-              <div class="social-links">
-                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-              </div>
-
-            </div>
-
-
-
-          </div>
-        </div>
-      </div> -->
 
       <div class="container">
         <div class="copyright">
           &copy; <strong>OmPaints</strong> 2019. All Rights Reserved
         </div>
         <div class="credits">
-          <!--
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
-          -->
           Designed by <a>Arjav & Bhavya</a>
         </div>
       </div>
     </footer><!-- #footer -->
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
-    <!--  -->
 
     <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js'></script> -->
     <script src="../B-Custom-Client-Slider/script.js"></script>
